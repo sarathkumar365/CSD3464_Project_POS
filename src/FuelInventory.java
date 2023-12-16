@@ -52,19 +52,6 @@ public class FuelInventory {
         }
     }
 
-    public double getAvailableQuantity() {
-        return availableQuantity;
-    }
 
-    public boolean isFuelAvailable() {
-        try {
-            if (availableQuantity > threshold) {
-                return true;
-            }
-            return false;
-        } catch (Exception e) {
-            System.out.println("Error: " + e.getMessage());
-            return false; // Return false or handle accordingly based on your application logic
-        }
-    }
+
 }
